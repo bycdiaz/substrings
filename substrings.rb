@@ -27,7 +27,6 @@ def substrings(word,dictionary)
   dictionary.each { |entry|
     word.split(" ").each { |word|
       if word.include?(entry)
-        # puts "#{entry} was found inside of #{word}!"
         repeats[entry] += 1
       end
     }
